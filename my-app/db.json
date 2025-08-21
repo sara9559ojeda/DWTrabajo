@@ -1,0 +1,29 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "Camisa",
+      "img": "/images/juego.jpg",
+      "description": "Explora sistemas estelares, descubre civilizaciones y construye tu nave en este RPG espacial."
+    },
+    {
+      "id": 2,
+      "name": "Halo",
+      "img": "/images/halo.jpg",
+      "description": " desc halo"
+    },
+    {
+      "id": 3,
+      "name": "Halo",
+      "img": "/images/halo.jpg",
+      "description": " desc halo"
+    },
+      {
+      "id": 2,
+      "name": "Halo",
+      "img": "/images/halo.jpg",
+      "description": " desc halo"
+    }
+  ]
+  
+}
