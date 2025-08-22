@@ -24,9 +24,6 @@
 				<li class="nav-item">
 					<a class="nav-link" href="/admin">Administrador</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/usuario">API usuarios</a>
-				</li>
                 <li class="nav-item">
 					<a class="nav-link" href="/games">Juegos</a>
 				</li>
