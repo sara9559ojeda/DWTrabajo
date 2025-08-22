@@ -2,28 +2,27 @@
   "games": [
     {
       "id": 1,
-      "name": "Camisa",
+      "name": "Starfield",
       "img": "/images/juego.jpg",
       "description": "Explora sistemas estelares, descubre civilizaciones y construye tu nave en este RPG espacial."
     },
     {
       "id": 2,
-      "name": "Halo",
+      "name": "Halo Infinite",
       "img": "/images/halo.jpg",
-      "description": " desc halo"
+      "description": "La última entrega de la legendaria saga Halo con combate épico y exploración."
     },
     {
       "id": 3,
-      "name": "Halo",
-      "img": "/images/halo.jpg",
-      "description": " desc halo"
+      "name": "God of War Ragnarok",
+      "img": "/images/gow.jpg",
+      "description": "Acompaña a Kratos y Atreus en una nueva aventura nórdica llena de mitología y acción."
     },
-      {
-      "id": 2,
-      "name": "Halo",
-      "img": "/images/halo.jpg",
-      "description": " desc halo"
+    {
+      "id": 4,
+      "name": "The Legend of Zelda",
+      "img": "/images/zelda.jpg",
+      "description": "Una aventura épica en el reino de Hyrule con puzzles y exploración."
     }
   ]
-  
 }
