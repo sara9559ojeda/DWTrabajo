@@ -1,8 +1,18 @@
 export async function load() {
-    const res = await fetch('http://localhost:3001/games');
-    const gamesSale = await res.json();
-    return {
-        gamesSale
-    };
-    
+    try {
+        // misma API que el admin
+        const res = await fetch('http://localhost:3002/games');
+        
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        
+        const gamesSale = await res.json();
+        
+        return {
+            gamesSale
+        };
+    } catch (error) {
+        console.error('Error cargando juegos:', error);
+    }
 }

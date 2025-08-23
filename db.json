@@ -1,0 +1,28 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "Starfield prueba",
+      "img": "/images/juego.jpg",
+      "description": "Explora sistemas estelares, descubre civilizaciones y construye tu nave en este RPG espacial."
+    },
+    {
+      "id": 2,
+      "name": "Halo Infinite",
+      "img": "/images/halo.jpg",
+      "description": "La última entrega de la legendaria saga Halo con combate épico y exploración."
+    },
+    {
+      "id": 3,
+      "name": "God of War Ragnarok",
+      "img": "/images/gow.jpg",
+      "description": "Acompaña a Kratos y Atreus en una nueva aventura nórdica llena de mitología y acción."
+    },
+    {
+      "id": 4,
+      "name": "The Legend of Zelda",
+      "img": "/images/zelda.jpg",
+      "description": "Una aventura épica en el reino de Hyrule con puzzles y exploración."
+    }
+  ]
+}
