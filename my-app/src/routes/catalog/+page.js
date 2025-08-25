@@ -1,6 +1,5 @@
 export async function load() {
     try {
-        // misma API que el admin
         const res = await fetch('http://localhost:3002/games');
         
         if (!res.ok) {

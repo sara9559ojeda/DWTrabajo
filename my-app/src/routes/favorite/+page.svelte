@@ -13,7 +13,6 @@
             const data = localStorage.getItem('favoritos');
             if (data) {
                 favorite = JSON.parse(data);
-                // Filtrar elementos null o undefined
                 favorite = favorite.filter(f => f && f.id);
             }
         } catch (e) {

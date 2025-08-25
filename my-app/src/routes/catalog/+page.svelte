@@ -7,7 +7,6 @@
   let gamesSale = data.gamesSale;
   let favorite = [];
 
-  // Cargar favoritos desde localStorage al montar el componente
   onMount(() => {
     const savedFavorites = localStorage.getItem('favoritos');
         favorite = JSON.parse(savedFavorites);
@@ -16,13 +15,11 @@
   function handleFavorite(event) {
     const game = event.detail;
     
-    // Verificar que el juego tenga las propiedades necesarias
     if (!game || !game.id) {
       console.error('Game object is invalid:', game);
       return;
     }
 
-    // Verificar si el juego ya está en favoritos
     const existingGame = favorite.find(f => f && f.id === game.id);
     
     if (!existingGame) {

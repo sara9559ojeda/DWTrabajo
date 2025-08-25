@@ -2,7 +2,7 @@
   "games": [
     {
       "id": 1,
-      "name": "Starfield prueba",
+      "name": "Starfield",
       "img": "/images/juego.jpg",
       "description": "Explora sistemas estelares, descubre civilizaciones y construye tu nave en este RPG espacial."
     },
@@ -15,7 +15,7 @@
     {
       "id": 3,
       "name": "God of War Ragnarok",
-      "img": "/images/gow.jpg",
+      "img": "/images/GOW.jpg",
       "description": "Acompaña a Kratos y Atreus en una nueva aventura nórdica llena de mitología y acción."
     },
     {

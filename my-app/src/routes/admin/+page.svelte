@@ -13,7 +13,6 @@
     let editingGame = null;
     let showForm = false;
     
-    // Formulario para nuevo juego o edición
     let gameForm = {
         id: '',
         name: '',
@@ -33,7 +32,6 @@
         return () => unsubscribe();
     });
 
-    // Cargar juegos desde la API/JSON
     async function loadGames() {
         try {
             const response = await fetch('http://localhost:3002/games');
@@ -44,7 +42,6 @@
         }
     }
 
-    // Agregar nuevo juego
     async function addGame() {
         if (!gameForm.name.trim() || !gameForm.description.trim()) {
             alert('Por favor completa todos los campos requeridos');
@@ -53,7 +50,7 @@
 
         try {
             const newGame = {
-                id: Date.now(), // ID simple basado en timestamp
+                id: Date.now(),
                 name: gameForm.name.trim(),
                 img: gameForm.img.trim() || '/images/default.jpg',
                 description: gameForm.description.trim()
@@ -79,8 +76,6 @@
             alert('Error al agregar el juego');
         }
     }
-
-    // Actualizar juego existente
     async function updateGame() {
         if (!gameForm.name.trim() || !gameForm.description.trim()) {
             alert('Por favor completa todos los campos requeridos');
@@ -116,7 +111,6 @@
         }
     }
 
-    // Eliminar juego
     async function deleteGame(id) {
         if (!confirm('¿Estás seguro de que quieres eliminar este juego?')) {
             return;
@@ -139,7 +133,6 @@
         }
     }
 
-    // Preparar formulario para edición
     function editGame(game) {
         editingGame = game.id;
         gameForm = {
@@ -151,7 +144,6 @@
         showForm = true;
     }
 
-    // Resetear formulario
     function resetForm() {
         editingGame = null;
         gameForm = {
@@ -163,7 +155,6 @@
         showForm = false;
     }
 
-    // Enviar formulario
     function handleSubmit() {
         if (editingGame) {
             updateGame();
@@ -179,7 +170,6 @@
         <p class="text-muted">Bienvenido, {currentUser.name}</p>
     </div>
 
-    <!-- Botón para mostrar/ocultar formulario -->
     <div class="mb-4">
         <button class="btn btn-primary" on:click={() => {showForm = !showForm; if (!showForm) resetForm()}}>
             {showForm ? 'Cancelar' : 'Agregar Nuevo Juego'}
@@ -189,7 +179,6 @@
         </button>
     </div>
 
-    <!-- Formulario para agregar/editar juegos -->
     {#if showForm}
         <div class="card mb-4">
             <div class="card-header">
@@ -244,8 +233,6 @@
             </div>
         </div>
     {/if}
-
-    <!-- Lista de juegos -->
     <div class="card">
         <div class="card-header">
             <h5>Lista de Juegos ({games.length})</h5>
